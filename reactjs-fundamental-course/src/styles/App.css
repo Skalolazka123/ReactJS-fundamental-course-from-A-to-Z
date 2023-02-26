@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    background-color: darkcyan;
+}
+
+.App {
+    width: 850px;
+    padding: 0 25px 80px;
+    border: 1px solid gainsboro;
+    background-color: #fff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+}
+h2 {
+    margin: 50px 0 15px;
+    padding: 15px 10px;
+    padding-bottom: 15px;
+    color: rgb(12, 153, 122);
+    font-size: 2em;
+    border: 1px dotted rgb(12, 153, 122);
+    background-color: rgb(240, 240, 240);
+}
+h3 {
+    margin: 10px 0;
+}
+button {
+    margin: 10px 0;
+    background-color: rgb(12, 153, 122);
+    border: 1px solid rgb(95, 95, 95);
+    border-radius: 3px;
+    padding: 2px 10px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+button:hover,
+button:active {
+    background-color: rgb(10, 121, 97);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.post {
+    display: flex;
+    padding: 15px;
+    border: 2px solid teal;
+    margin-top: 15px;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+}

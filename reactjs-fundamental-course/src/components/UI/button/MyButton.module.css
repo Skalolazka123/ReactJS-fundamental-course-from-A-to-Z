@@ -1,0 +1,24 @@
+.myBtn {
+    padding: 5px 15px;
+    color: coral;
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid coral;
+}
+
+.myBtn:hover,
+.myBtn:active {
+    color: #fff;
+    background-color: coral;
+}
+
+.myBtn:disabled {
+    opacity: 0.7;
+}
+
+.myBtn:disabled:hover {
+    color: coral;
+    background: transparent;
+    box-shadow: none;
+    cursor: initial;
+}
