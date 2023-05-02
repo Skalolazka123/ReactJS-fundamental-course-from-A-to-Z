@@ -6,16 +6,20 @@
 
 #root {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: darkcyan;
 }
 
 .App {
     width: 850px;
+    min-height: 100vh;
     padding: 0 25px 80px;
+    margin-top: 100px;
     border: 1px solid gainsboro;
     background-color: #fff;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 40px 40px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
 }
 h2 {
     margin: 50px 0 15px;
@@ -29,21 +33,26 @@ h2 {
 h3 {
     margin: 10px 0;
 }
-button {
+button,
+.button {
     margin: 10px 0;
     background-color: rgb(12, 153, 122);
     border: 1px solid rgb(95, 95, 95);
     border-radius: 3px;
-    padding: 2px 10px;
+    padding: 5px 15px;
     color: #fff;
+    text-decoration: none;
     transition: all 0.3s ease;
 }
 button:hover,
-button:active {
+button:active,
+.button:hover,
+.button:active {
     background-color: rgb(10, 121, 97);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
+
 .post {
     display: flex;
     padding: 15px;
@@ -52,4 +61,19 @@ button:active {
     border-radius: 5px;
     justify-content: space-between;
     align-items: center;
+}
+
+.post-enter {
+    transform: translateX(-350px);
+}
+.post-enter-active {
+    transform: translateX(0px);
+    transition: all 500ms ease-in;
+}
+.post-exit {
+    opacity: 1;
+}
+.post-exit-active {
+    transform: translateX(-350px);
+    transition: all 500ms ease-in;
 }
