@@ -7,13 +7,13 @@ Course from https://www.youtube.com/watch?v=GNrdg3PzpJQ
 
 In the project directory, you can run:
 
-## `npm start`
+### `npm start`
 
-## `npm test`
+### `npm test`
 
-## `npm run build`
+### `npm run build`
 
-## `npm run eject`
+### `npm run eject`
 
 ### Таймкоды:
 ##### 00:00 ➝ Введение
