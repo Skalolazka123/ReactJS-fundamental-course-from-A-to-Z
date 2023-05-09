@@ -14,8 +14,8 @@ const Counter = function () {
         <>
             <h1>This is FunctionCounter</h1>
             <h1>{count}</h1>
-            <button onClick={increment}>Increment</button>
-            <button onClick={decrement}>Decrement</button>
+            <button onClick={decrement}>-</button>
+            <button onClick={increment}>+</button>
         </>
     )
 }

@@ -20,6 +20,8 @@
     background-color: #fff;
     box-shadow: 0 40px 40px rgba(0, 0, 0, 0.4);
     overflow: hidden;
+    background-image: url(../img/dot.svg);
+    background-size: 2%;
 }
 h2 {
     margin: 50px 0 15px;
@@ -76,4 +78,31 @@ button:active,
 .post-exit-active {
     transform: translateX(-350px);
     transition: all 500ms ease-in;
+}
+.post__content {
+    margin-right: 10px;
+    text-align: justify;
+    text-justify: newspaper;
+}
+.post__btns {
+    display: flex;
+    gap: 10px;
+}
+
+.page-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px 0 40px 50px;
+}
+
+.page-nav__link {
+    font-size: 20px;
+    color: teal;
+    transition: color 0.3s ease;
+}
+.page-nav__link:hover,
+.page-nav__link:active,
+.page-nav__link:focus {
+    color: coral;
 }

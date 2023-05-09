@@ -6,7 +6,7 @@ const NotFound = () => {
         <div>
             <h2>404 - Page not found</h2>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <Link to="/about" class="button">
+                <Link to="/about" className="button">
                     Вернуться на главную
                 </Link>
             </div>

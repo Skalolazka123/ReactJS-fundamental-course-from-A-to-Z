@@ -1,39 +1,27 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const About = () => {
     return (
         <div>
             <h2>About Page</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloremque, ipsa minima sunt harum eum
-                enim vel neque veniam, natus, aliquam pariatur nesciunt ipsum laudantium?
-            </p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eaque vero harum perspiciatis earum
-                atque tempore, dolorum pariatur. Voluptatibus facere quos natus eligendi, explicabo voluptas labore
-                minima maxime recusandae commodi nulla. Nostrum alias ab facere doloribus, voluptates quis illum
-                praesentium.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloremque, ipsa minima sunt harum eum
-                enim vel neque veniam, natus, aliquam pariatur nesciunt ipsum laudantium?
-            </p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eaque vero harum perspiciatis earum
-                atque tempore, dolorum pariatur. Voluptatibus facere quos natus eligendi, explicabo voluptas labore
-                minima maxime recusandae commodi nulla. Nostrum alias ab facere doloribus, voluptates quis illum
-                praesentium.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloremque, ipsa minima sunt harum eum
-                enim vel neque veniam, natus, aliquam pariatur nesciunt ipsum laudantium?
-            </p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eaque vero harum perspiciatis earum
-                atque tempore, dolorum pariatur. Voluptatibus facere quos natus eligendi, explicabo voluptas labore
-                minima maxime recusandae commodi nulla. Nostrum alias ab facere doloribus, voluptates quis illum
-                praesentium.
-            </p>
+            <div className="page-nav">
+                <Link className="page-nav__link" to="/page1">
+                    1. Функциональный компонент + Классовый компонент
+                </Link>
+                <Link className="page-nav__link" to="/page2">
+                    2. Стили CSS+Props+списки
+                </Link>
+                <Link className="page-nav__link" to="/page3">
+                    3. Форма создания поста. Управляемые и неуправляемые компоненты
+                </Link>
+                <Link className="page-nav__link" to="/page4">
+                    4. Сортировка+поиск+фильтрация+модальное окно+анимации+кастомные хуки
+                </Link>
+                <Link className="page-nav__link" to="/page5">
+                    5. Работа с сервером+useEffect+Loader+useFetchng+pagination
+                </Link>
+            </div>
         </div>
     )
 }
